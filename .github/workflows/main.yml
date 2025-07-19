@@ -1,0 +1,14 @@
+name: Exemplo PowerShell
+
+on:
+  workflow_dispatch: # roda manualmente ao clicar no botão
+
+jobs:
+  run-powershell:
+    runs-on: windows-latest
+    steps:
+    - name: Executar script PowerShell
+      run: |
+        Write-Output "Olá do PowerShell no GitHub Actions!"
+        # Aqui você pode colocar seus comandos PowerShell
+      shell: pwsh
